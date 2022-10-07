@@ -1,0 +1,246 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(152, 156, 165);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(81, 137, 40);
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    border-radius: 0 0 15px 15px;
+    
+    position: relative;
+    cursor: url(images/1545206.png) 25 25, auto;
+}
+
+.block {
+    background-color: rgb(81, 137, 40);
+    width: 80px;
+    height: 80px;
+    min-height: 80px;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+
+}
+
+.block-child {
+    background-image: url(images/target.png);
+    background-size: 100% 100%;
+    width: 80px;
+    height: 80px;
+    min-height: 80px;
+    border-radius: 40px;
+
+}
+
+
+.block-child-hard {
+    background-image: url(images/target.png);
+    background-size: 100% 100%;
+    margin: 18px;
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    border-radius: 20px;
+}
+
+
+
+.test_border {
+    border: 1px solid black;
+}
+
+#main_frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title_container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    display: none; /* toggle between none/flex*/
+    justify-content: center;
+    align-items: center;   
+}
+
+
+
+#upper_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    border: 10px solid black;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    background-color: #284414;
+}
+
+.text_animation {
+    transition: 2s;
+    font-size: 200%;
+}
+
+#cover {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background-color: black;
+    z-index: 4;
+    display: none; /* toggle between none/flex*/
+    justify-content: center;
+    align-items: center;
+}
+
+#cover_div {
+    display: block;
+    font-weight: bold;
+    height: 60px;
+    color: white;
+    font-size: 50px;
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+#result {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 150px;
+}
+
+#button_restart {
+    
+    font-weight: bold;
+    position: absolute;
+    bottom: 50px;
+    color: black;
+    border: 10px solid black;
+    border-radius: 15px;
+    background-color:rgb(81, 137, 40);
+    text-align: center;
+    outline: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#button_restart:hover {
+   background-color: #284414; 
+}
+
+
+
+#menu_cover {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex; /* toggle between none/flex*/
+    justify-content: center;
+    align-items: center;    
+}
+
+#menu {
+    border: 10px solid black;
+    border-radius: 15px;
+    outline: 1px solid white;
+    background-color: rgb(81, 137, 40);
+}
+
+#menu div {
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+}
+
+#menu div:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+#level {
+    border: 10px solid black;
+    border-radius: 0 0 15px 15px;
+    background-color:rgb(81, 137, 40);
+    width: 150px;
+    text-align: center;
+    /*z-index: -1;*/
+    position: absolute;
+    top: 100%;
+    left: 115px;
+}
+
+#about_container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    display: none; /* toggle between none/flex*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about_window {
+    color: white;
+    border: 10px solid black;
+    border-radius: 15px;
+    outline: 1px solid white;
+    background-color: black;
+    width: 250px;
+    padding: 30px 20px 0 20px;
+    text-align: center;
+    position: relative;
+}
+
+#about_window div {
+    color: black;
+    border: 10px solid black;
+    border-radius: 15px;
+    background-color:rgb(81, 137, 40);
+    text-align: center;
+    outline: 1px solid white;
+    margin-top: 30px;
+    
+}
+#about_window div:hover {
+    background-color: #284414;
+}
+
+#health_bar {
+    border-left: 10px solid black;
+    width: 195px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+#icon {
+    position: absolute;
+    margin-right: 80px;
+}
+
+#health_ammount {
+    width: 100%;
+    background-color: red;
+}
+
+
